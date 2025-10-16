@@ -1,25 +1,25 @@
 #import "template.typ": *
 
-#let name = "Nakano Miku"
-#let namezh = "中野三玖"
+#let name = "HUANG WENYU"
+#let namezh = "黄文禹"
 #let email = [
-  #icon("email.svg") n.miku0505\@socomo.ne.jp
+  #icon("email.svg") huangwenyuu\@outlook.com
 ]
 #let phone = [
   #icon("phone.svg")
-  (+81) 0906914373641
+  (+86) 13860891577
 ]
 #let home = [
   #icon("home.svg")
-  #link("https://miku.example.com")[ miku.example.com ]
+  #link("https://uran0sh.github.io/blog/")[ uran0sh.github.io/blog/ ]
 ]
 #let github = [
   #icon("github.svg")
-  #link("https://miku.example.com")[ miku ]
+  #link("https://github.com/uran0sH")[ uran0sh ]
 ]
 #let linkin = [
   #icon("linkedin.svg")
-  #link("https://miku.example.com")[ Nakano Miku ]
+  #link("https://www.linkedin.com/in/wenyu-huang-298b31262/")[ Wenyu Huang ]
 ]
 
 #let author = (
@@ -39,15 +39,6 @@
   linkin: linkin,
 )
 
-#let selftitle = [ Self Introduction ]
-#let selftitlezh = [ 自我总结 ]
-#let self = [
-  #lorem(64)
-]
-#let selfzh = [
-  管怀馈犬筹鞘旺增半挂剪吹。励川锂撮菌爷钵梁讽途连和枚反？醛佛奋。篇演靶店寺济枪蔗艇胆历昂遗沾，纲锌妈窖腾奠昆捞经羞幕获豌厚她垅妈轲析夯舰墩璃损傍苷兹仑盒面哪核温藏给录伟助晰言航贸轲洼涉姿妇踪孕。瞎列疾俱寿幅虾夕长坐珠助夏踏蛾阮纸浙恢层融噪拿辐拢厦升体曹呢局？
-]
-
 #let edutitle = [ Education ]
 #let edutitlezh = [ 教育经历 ]
 #let edu = [
@@ -59,7 +50,7 @@
     align(right)[
       Tokyo, Japan \
       202x - _present_
-    ]
+    ],
   )
 
   #lorem(32)
@@ -72,7 +63,7 @@
     align(right)[
       Aichi, Japan \
       201x - 201x
-    ]
+    ],
   )
 
   #datedsubsection(
@@ -83,65 +74,70 @@
     align(right)[
       Aichi, Japan \
       201x - 201x
-    ]
+    ],
   )
 ]
 #let eduzh = [
   #datedsubsection(
     align(left)[
-      *#lorem(4)* \
-      #lorem(4)
+      *香港中文大学（深圳）* \
+      计算机与信息工程  硕士 \
+      导师：钟叶青 \
+      GPA 3.5/4.0 \
+      论文: A High Read Performance LSM-Tree Key-Value Store (Based on LevelDB)
+
     ],
     align(right)[
-      东京, 日本 \
-      202x - _现在_
-    ]
-  )
-
-  #lorem(32)
-
-  #datedsubsection(
-    align(left)[
-      *#lorem(4)* \
-      #lorem(4)
+      深圳 \
+      2021 - 2023
     ],
-    align(right)[
-      爱知, 日本 \
-      201x - 201x
-    ]
   )
 
   #datedsubsection(
     align(left)[
-      *#lorem(4)* \
-      #lorem(4)
+      #strong[武汉理工大学] \
+      软件工程  本科 \
+      GPA 4.0/5.0
     ],
     align(right)[
-      爱知, 日本 \
-      201x - 201x
-    ]
+      武汉 \
+      2017 - 2021
+    ],
+  )
+]
+
+#let worktitle = [ Work Experience ]
+#let worktitlezh = [ 工作经历 ]
+#let workzh = [
+  #datedsubsection(
+    align(left)[
+      *华为技术有限公司* \
+      - 工作内容主要有：
+        - Linux 调度模块的维护和异构融合调度预研（C/C++）
+          - 跟进社区EEVDF调度算法，对其进行性能测试和组内培训；适配在离线混部特性到6.6内核并且解决相关的BUG，主要包括死锁，hungtask等。；了解CFS，负载均衡等
+          - 实现昇腾NPU训练任务的checkpoint和restore，达成30秒内完成8卡7B训练任务恢复； 主要包括NPU状态的恢复，单机多卡P2P恢复，算子重放等；阅读修改过昇腾CANN（C++），驱动源码，了解算子下发流程，了解驱动hdc通信机制
+        - 大数据开发（C++, Python, Java）
+          - 流计算引擎dfx功能开发，主要包括作业管理，作业失败自动恢复等
+          - 元数据服务高可用开发，实现基于zookeeper和etcd的一主多备
+          - NL2SQL 中元数据提取持久化和使用LLM增强元数据持久化，schema Linking预研开发
+    ],
+    align(right)[
+      深圳 \
+      2023 - _now_
+    ],
   )
 ]
 
 #let techtitle = [ Technical Skills ]
 #let techtitlezh = [ 技术能力 ]
 #let tech = [
-  - *Programming*: #lorem(8)
-    - #lorem(8)
-    - #lorem(8)
-  - *Key words*: #lorem(8)
-  - *Tools*: #lorem(8)
-    - #lorem(8)
-    - #lorem(8)
+  - *Programming*: Rust, C/C++, Python, JAVA, Go
+  - *Tools*: docker, shell, git, k8s
 ]
 #let techzh = [
-  - *编程语言*: #lorem(8)
-    - #lorem(8)
-    - #lorem(8)
-  - *关键字*: #lorem(8)
-  - *工具*: #lorem(8)
-    - #lorem(8)
-    - #lorem(8)
+  - *编程语言*: Rust, C/C++, Python, JAVA, Go
+  - *工具*: docker, shell, git, k8s
+  - *擅长领域*: 操作系统（虚拟化），数据库
 ]
 
 #let projecttitle = [ Project Experience ]
@@ -149,12 +145,12 @@
 #let projectexperience = [
   #datedsubsection(
     align(left)[
-      *#lorem(4)* \
-      Maintainer
+      *vhost-user devices in Rust on macOS and \*BSD* \
+      Contributor
     ],
     align(right)[
       202x - _present_
-    ]
+    ],
   )
 
   - #lorem(32)
@@ -167,7 +163,7 @@
     ],
     align(right)[
       202x - _present_
-    ]
+    ],
   )
 
   - #lorem(32)
@@ -176,29 +172,17 @@
 #let projectexperiencezh = [
   #datedsubsection(
     align(left)[
-      *#lorem(4)* \
-      维护者
+      *vhost-user devices in Rust on macOS and \*BSD* (GSoC 2025)\
+      Contributor
     ],
     align(right)[
-      202x - _现在_
-    ]
-  )
-
-  - #lorem(32)
-  - #lorem(8)
-
-  #datedsubsection(
-    align(left)[
-      *#lorem(4)* \
-      维护者
+      2025.6 - 2025.8
     ],
-    align(right)[
-      202x - _现在_
-    ]
   )
 
-  - #lorem(32)
-  - #lorem(8)
+  - 关于Linux虚拟化的项目，适配rust-vmm中vhost-user模块能运行在macOS和\*BSD上。其中涉及使用统一的异步io库mio替换epoll，使用pipe替换eventfd等
+  - 涉及技术: Linux，虚拟化，virtio，Rust
+  - https://github.com/uran0sH/GSoC2025-vhost-user-bsd-macos
 ]
 
 #let activitytitle = [ Activity Experience ]
@@ -211,7 +195,7 @@
     ],
     align(right)[
       202x
-    ]
+    ],
   )
 
   #lorem(32)
@@ -223,11 +207,11 @@
     ],
     align(right)[
       202x - _present_
-    ]
+    ],
   )
 
   #lorem(16)
-
+·
   #datedsubsection(
     align(left)[
       *#lorem(8)* \
@@ -235,7 +219,7 @@
     ],
     align(right)[
       202x
-    ]
+    ],
   )
 
   - #lorem(8)

@@ -1,9 +1,9 @@
 // You may need to change this settings
-#let sansen = "KpSans"
-#let sanszh = "Source Han Sans SC"
-#let serifen = "KpRoman"
-#let serifzh = "Source Han Serif SC"
-#let emj = "Segoe UI Emoji"
+#let sansen = "SF Pro Text"
+#let sanszh = "PingFang SC"
+#let serifen = "SF Pro Text"
+#let serifzh = "PingFang SC"
+#let emj = "Apple Color Emoji"
 
 #let info = author => align(center)[
   #author.email \
